@@ -1,0 +1,31 @@
+{
+  "name": "nest-template",
+  "version": "0.1.0",
+  "scripts": {
+    "lint": "eslint --ext .ts src; exit 0",
+    "build:prod": "ncc build src/index.ts -m -o build",
+    "build:dev": "ncc build src/index.ts -s -o build"
+  },
+  "dependencies": {
+    "@nestjs/common": "^7.0.8",
+    "@nestjs/config": "^0.4.0",
+    "@nestjs/core": "^7.0.8",
+    "@nestjs/platform-express": "^7.0.8",
+    "@nestjs/typeorm": "^7.0.0",
+    "helmet": "^3.22.0",
+    "pg": "^8.0.2",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.24",
+    "typeorm-naming-strategies": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/helmet": "0.0.45",
+    "@types/node": "^13.11.1",
+    "@typescript-eslint/eslint-plugin": "^2.28.0",
+    "@typescript-eslint/parser": "^2.28.0",
+    "@zeit/ncc": "^0.22.1",
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
+    "typescript": "^3.8.3"
+  }
+}
